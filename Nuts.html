@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEMEA Team Meeting</title>
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+      }
+      legend {
+        font-size: 24px;
+      }
+      form {
+        text-align: center;
+      }
+      fieldset {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        background-color: #444;
+      }
+      input[type="radio"] {
+        margin: 5px;
+      }
+      input[type="radio"]:checked + label {
+        background-color: #666;
+      }
+      label {
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #555;
+      }
+      #result {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 20px;
+      }
+      button {
+        background-color: #555;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #666;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Things That Drive Me Nuts</h1>
+    <form>
+      <fieldset>
+        <legend>People</legend>
+        <input type="radio" name="category" value="People1" data-category="people" id="people1">
+        <label for="people1">1</label>
+        <input type="radio" name="category" value="People2" data-category="people" id="people2">
+        <label for="people2">2</label>
+        <input type="radio" name="category" value="People3" data-category="people" id="people3">
+        <label for="people3">3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Driving</legend>
+        <input type="radio" name="category" value="Driving1" data-category="driving" id="driving1">
+        <label for="driving1">1</label>
+        <input type="radio" name="category" value="Driving2" data-category="driving" id="driving2">
+        <label for="driving2">2</label>
+        <input type="radio" name="category" value="Driving3" data-category="driving" id="driving3">
+        <label for="driving3">3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Work</legend>
+        <input type="radio" name="category" value="Work1" data-category="work" id="work1">
+        <label for="work1">1</label>
+        <input type="radio" name="category" value="Work2" data-category="work" id="work2">
+        <label for="work2">2</label>
+        <input type="radio" name="category" value="Work3" data-category="work" id="work3">
+        <label for="work3">3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Domestic</legend>
+        <input type="radio" name="category" value="Domestic1" data-category="domestic" id="domestic1">
+        <label for="domestic1">1</label>
+        <input type="radio" name="category" value="Domestic2" data-category="domestic" id="domestic2">
+        <label for="domestic2">2</label>
+        <input type="radio" name="category" value="Domestic3" data-category="domestic" id="domestic3">
+        <label for="domestic3">3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Entertainment</legend>
+        <input type="radio" name="category" value="Entertainment1" data-category="entertainment" id="entertainment1">
+        <label for="entertainment1">1</label>
+        <input type="radio" name="category" value="Entertainment2" data-category="entertainment" id="entertainment2">
+        <label for="entertainment2">2</label>
+        <input type="radio" name="category" value="Entertainment3" data-category="entertainment" id="entertainment3">
+        <label for="entertainment3">3</label>
+      </fieldset>
+      <fieldset>
+        <legend>Travel</legend>
+        <input type="radio" name="category" value="Travel1" data-category="travel" id="travel1">
+        <label for="travel1">1</label>
+        <input type="radio" name="category" value="Travel2" data-category="travel" id="travel2">
+        <label for="travel2">2</label>
+        <input type="radio" name="category" value="Travel3" data-category="travel" id="travel3">
+        <label for="travel3">3</label>
+      </fieldset>
+      <button type="button" onclick="displayString()">Submit</button>
+    </form>
+    <p id="result"></p>
+    <script src="nutsFunction.js"></script>
+  </body>
+</html>
