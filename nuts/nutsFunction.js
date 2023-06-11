@@ -4,7 +4,7 @@ function displayString() {
     const category = checkedInput.getAttribute('data-category');
     const value = checkedInput.value;
     const result = document.getElementById('result');
-    result.textContent = `I HATE ${getUniqueString(category, value)}.`;
+    result.textContent = `It drives me nuts when ${getUniqueString(category, value)}.`;
   }
 }
 
@@ -13,9 +13,9 @@ function getUniqueString(category, value) {
     case 'people':
       switch (value) {
         case 'People1':
-          return 'Being late';
+          return 'I\'m late';
         case 'People2':
-          return 'People that stop in doorways';
+          return 'people stop in doorways';
         case 'People3':
           return 'Nosy people';
         default:
@@ -24,22 +24,22 @@ function getUniqueString(category, value) {
     case 'driving':
       switch (value) {
         case 'Driving1':
-          return 'See-sawing past you on a motorway';
+          return 'see-saw past you on a motorway';
         case 'Driving2':
-          return 'Mixed measurement systems (UK specific)';
+          return 'using mixed measurement systems (UK specific)';
         case 'Driving3':
-          return 'Pulling out slowly from a junction';
+          return 'people pull out slowly from a junction';
         default:
           return '';
       }
     case 'work':
       switch (value) {
         case 'Work1':
-          return 'Meta meetings';
+          return 'attending meta meetings';
         case 'Work2':
-          return 'Poorly scoped meetings';
+          return 'meetings are poorly scoped';
         case 'Work3':
-          return 'Trying to note down names and roles during introductions';
+          return 'I\'m trying to note down names and roles during introductions';
         default:
           return '';
       }
@@ -57,22 +57,22 @@ function getUniqueString(category, value) {
     case 'entertainment':
       switch (value) {
         case 'Entertainment1':
-          return 'People who ask what\'s going on in a film, during a film';
+          return 'people who ask what\'s going on in a film, during a film';
         case 'Entertainment2':
-          return 'Pubs that don\'t accept dogs';
+          return 'pubs don\'t allow dogs';
         case 'Entertainment3':
-          return 'Restaurants that take forever to get more drinks';
+          return 'restaurants take forever to get more drinks';
         default:
           return '';
       }
     case 'travel':
       switch (value) {
         case 'Travel1':
-          return 'People using phones on speaker';
+          return 'people using phones on speaker';
         case 'Travel2':
-          return 'People walking slowly in front of you';
+          return 'people walk slowly in front of you';
         case 'Travel3':
-          return 'Huge numbers of cushions on a bed';
+          return 'I have to move huge numbers of cushions on a bed';
         default:
           return '';
       }
