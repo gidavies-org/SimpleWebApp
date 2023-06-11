@@ -17,7 +17,7 @@ function getUniqueString(category, value) {
         case 'People2':
           return 'people stop in doorways';
         case 'People3':
-          return 'Nosy people';
+          return 'people are really nosy';
         default:
           return '';
       }
