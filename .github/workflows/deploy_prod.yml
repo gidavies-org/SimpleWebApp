@@ -16,7 +16,7 @@ jobs:
   build:
     uses: gidavies/simplewebapp/.github/workflows/build.yml@main
     with:
-      node_version: '16.x'
+      node_version: '20.x'
   
   publish:
     uses: gidavies/simplewebapp/.github/workflows/containerise.yml@main
@@ -28,7 +28,7 @@ jobs:
     uses: gidavies/simplewebapp/.github/workflows/deploy_to_azure_oidc.yml@main
     with:
       envName: 'Production'
-      appServiceName: 'simplewebapp-gd-cont'
+      appServiceName: 'simplewebapp-gd-prod'
       acrName: 'simplewebapp'
       tagName: 'simplewebapp'
     secrets:
