@@ -35,3 +35,9 @@ H -->|Calls| F(deploy_to_azure.yml)
 F -->|Needs| C(build.yml)
 ```
 (This is an embedded [Markdown defined Mermaid diagram](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/))
+
+## Copilot for PRs
+
+Some text to highlight Copilot for PRs, which is designed to reduce the effort involved in writing a pull request description. 
+
+When you are ready to create a new pull request you can use Copilot to suggest parts of the pull request description. 
